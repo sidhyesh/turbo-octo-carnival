@@ -1,0 +1,19 @@
+//recursive function calculates n!
+static int FactorialRecursive(int n)
+{
+    if (n <= 1) return 1;
+    return n * FactorialRecursive(n - 1);
+}
+
+//iterative function calculates n!
+static int FactorialIterative(int n)
+{
+    int sum = 1;
+    if (n <= 1) return sum;
+    while (n > 1)
+    {
+        sum *= n;
+        n--;
+    }
+    return sum;
+}
